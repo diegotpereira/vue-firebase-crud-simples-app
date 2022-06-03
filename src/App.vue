@@ -1,17 +1,31 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <nav class="navbar navbar-dark bg-dark justify-content-between flex-nowrap flex-now">
+      <div class="container">
+        <a href="#" class="navbar-brand float-left">App Cadastro de Usuário Vue com Firebase</a>
+        <ul class="nav navbar-nav flex-row float-right">
+          <li class="nav-item">
+            <router-link class="nav-link pr-3" to="/">Adicionar</router-link>
+          </li>
+           <li class="nav-item">
+            <router-link class="nav-link" to="/lista">Exibir</router-link>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container mt-5">
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    
   }
 }
 </script>
